@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature converter</title>
+    <link type="text/css" rel="stylesheet" href="temp_style.css">
+    <script src="tempjs.js"></script>
+</head>
+
+<body>
+    <div class="container">
+    <header>
+        <h1>TEMPERATURE CONVERTER</h1>
+    </header>
+
+    <div id="datalist">
+        <datalist id="list">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </datalist>
+    </div>
+
+    <div id="main">
+        <div class="set" >
+            <input type="number" id="get_temp" name="gettemp" placeholder="Enter a number" required>
+            <input type="text" id="ini_temp" list="list">
+        </div>
+        <p id="to">to</p>
+        <div class="set" >
+            <input type="number" id="set_temp" name="settemp" placeholder="Final temperature" required>
+            <input type="text" id="final_temp" list="list">
+        </div>
+        <div class="butn">
+            <input id="btn" accesskey="h" type="button" value="Convert">
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
